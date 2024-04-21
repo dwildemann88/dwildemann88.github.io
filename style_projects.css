@@ -7,8 +7,6 @@ body{
     font-family: monospace;
     color: rgb(28,28,28);
     background-color: beige;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .project-container {
