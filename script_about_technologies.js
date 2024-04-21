@@ -43,7 +43,7 @@ function addTechnologi(link, name) {
 
 function showTooltip(card) {
     const tooltip = card.querySelector('.tooltip');
-    tooltip.style.display = 'block';
+    tooltip.style.display = 'flex';
 }
 
 function hideTooltip(card) {
