@@ -12,6 +12,12 @@ const projects = [
         image: "img/mata-mosquito.jpg",
         link: "https://mata-mosquito-game-dw.netlify.app/"
     },
+    {
+        title: "Indisponível",
+        description: "Projeto em desenvolvimento, aguarde.",
+        image: "img/indi.png",
+        link: "#"
+    },
 ];
 
 // Função para criar os elementos de exposição

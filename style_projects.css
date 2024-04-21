@@ -27,12 +27,16 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .project-card h2{
+    width: 100%;
+    font-size: 18px;
+    text-align: start;
     padding-right: 75px;
-    width: max-content;
 }
 .project-card img {
      max-width: 100%;
-    height: auto;
+     object-fit: cover;
+    height: 200px;
+    padding-bottom: 5px;
 }
 .project-card a{
     display: flex;
