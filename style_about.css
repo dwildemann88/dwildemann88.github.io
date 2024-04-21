@@ -1,0 +1,229 @@
+
+main{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.about-me, .technologies{
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.general-info{
+    display: flex;
+    gap: 20px;
+}
+.master-info{
+    display: flex;
+    /* position: absolute; */
+    flex-direction: column;
+    top: 14%;
+    left: 15%;
+    border: 2px solid rgb(28,28,28);
+    border-radius: 20px;
+    background-color: beige;
+    padding: 20px;
+    width: 650px;
+    height: 200px;
+    
+}
+
+.my-photo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid rgb(28,28,28);
+    border-radius: 20px;
+    /* filter: grayscale(100%) */
+}
+.all-info{
+    margin-top: 10px;
+    height: 50%;
+}
+.my-text{
+    display: flex;
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
+}
+.instagram, .linkedin,.zap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(28,28,28);
+    border-radius: 14px;
+    transition: 0.2s;
+}
+.hoverclass:hover{
+    box-shadow: 5px 5px 0 0 rgb(28,28,28);
+    transition: 0.2s;
+    transform: translateY(2px);
+    transform: translateX(-2px);
+
+}
+.zap{
+    background-image: url(img/zap.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+}
+.instagram{
+    width: 45px;
+    height: 45px;
+    background-image: url(img/ig.png);
+    background-size: cover;
+}
+.linkedin{
+    width: 45px;
+    height: 45px;
+    background-image: url(img/link.png);
+    background-size: cover;
+}
+.social-medias{
+    display: flex;
+    gap: 20px;
+    padding:20px;
+    justify-content: flex-end;
+    
+}
+.social-button{
+    content: " ";
+    width: 50px;
+    height: 50px;
+
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dowload-curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(28,28,28);
+    border-radius: 20px;
+    width: 150px;
+    height: 80px;
+    transition: 0.2s;
+    background-color: beige;
+    
+}
+.dowload-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(28,28,28);
+    width: 150px;
+    height: 80px;
+}
+.dowload-curriculo:hover{
+    box-shadow: 5px 5px 0 0 rgb(28,28,28);
+    transition: 0.2s;
+    transform: translateY(2px);
+    transform: translateX(-2px);
+    background-color: white;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.tech-tittle{
+    width: 100%;
+    text-align: center;
+}
+.card-tec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100px;
+    text-align: center; 
+    margin: 10px; 
+}
+.tech-image {
+    max-width: 100px; 
+    height: auto; 
+}
+
+.card-tec {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-tec:hover .tooltip,
+.card-tec.active .tooltip {
+    opacity: 1;
+}
+
+
+@media (min-width: 768px) {
+    .card-tec:nth-child(3n + 1) {
+        clear: left; 
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        overflow-y: scroll;
+    }
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-me, .technologies {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .general-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .master-info {
+        top: initial;
+        left: initial;
+        width: 100%;
+    }
+
+    .my-photo {
+        margin-bottom: 20px;
+    }
+
+    .all-info {
+        height: auto;
+    }
+
+    .social-medias {
+        justify-content: center;
+    }
+
+    .social-button {
+        width: 40px;
+        height: 40px;
+    }
+}

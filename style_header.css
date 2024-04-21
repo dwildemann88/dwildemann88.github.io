@@ -1,0 +1,90 @@
+
+/* cabeçalho */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.navegation{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.aref {
+    position: relative;
+    text-decoration: none;
+    color: rgb(28,28,28);
+}
+
+.aref::after {
+    content: ''; /* Adiciona conteúdo ao pseudoelemento */
+    position: absolute; /* Posiciona em relação ao link pai */
+    bottom: -2px; /* Ajusta a posição verticalmente */
+    left: 0; /* Alinha com a borda esquerda do link */
+    width: 0; /* Começa com largura zero */
+    height: 2px; /* Altura da linha */
+    background-color: rgb(28,28,28); /* Cor da linha */
+    transition: width 0.3s ease; /* Adiciona uma transição suave para a largura */
+}
+
+.aref:hover::after {
+    width: 100%; /* Largura da linha ao passar o mouse */
+}
+
+@keyframes growLine2 {
+    from {
+        width: 0; /* Começa com largura zero */
+    }
+    to {
+        width: 80px; /* Largura desejada */
+    }
+}
+/* responsivo abaixo */
+.responsive-nav{
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    
+}
+.line{
+    border: 1px solid rgb(28,28,28);
+    width: 25px;
+    height: 2px;
+    margin: 3px;
+    transition:  0.1s ease-in;
+}
+.navegationResponsive{
+    display: none;
+    list-style: none;
+    margin-top: 38px;
+    padding-right: 100px;
+    right: 0;
+    position: absolute;
+    background-color: white;
+    
+}
+.navegationResponsive>li>a{
+    text-decoration: none;
+    color:rgb(28,28,28); 
+}
+.navegationResponsive>li{
+    margin: 20px;
+    
+}
+@media (max-width: 1000px) {
+    
+    .navegation{
+        display: none;
+        
+    }
+    .responsive-nav{
+        display: flex;
+        
+    }
+    
+}
+/* cabeçalho fim */

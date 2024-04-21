@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+    color: rgb(28,28,28);
+    background-color: beige;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: rgb(28,28,28);
+}
+
+/* section principal */
+.principal{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.line-vertical{
+    background-color: black;
+    height: 0; 
+    width: 2px;
+    margin: 3px;
+    animation: growDown 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+    margin-right: 10px;
+}
+.text-principal{
+    font-size: 52px;
+    /* border: 1px solid red; */
+    width: 290px;
+    animation: easeInText 0.8s forwards;
+    animation-delay: 0.2s;
+    opacity: 0%;
+}
+
+
+@keyframes growDown {
+    from {
+      height: 0;
+    }
+    to {
+      height: 150px; 
+    }
+}
+@keyframes easeInText{
+    from{
+        left: -30px;
+        position: relative;
+        opacity: 0%;
+    }
+
+    to{
+        left: 30px;
+        opacity: 100%;
+    }
+}
+  
+@media (max-width: 300px) {
+    .lineVertical{
+        background-color: black;
+        width: 5px;
+        height: 150px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .text-principal{
+        font-size: 32px;
+        /* border: 1px solid red; */
+        width: 280px;
+    }
+}
+
+
+
+
+
