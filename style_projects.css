@@ -57,6 +57,17 @@ body{
     transition:0.2s ;
 }
 @media only screen and (max-width: 1000px) {
+    .project-card {
+        flex: 0 0 calc(50% - 40px); /* Largura responsiva para 2 colunas */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project-card {
+        flex: 0 0 calc(100% - 40px); /* Largura responsiva para 1 coluna */
+    }
+}
+@media only screen and (max-width: 1000px) {
     body{
         overflow-y: scroll;
         padding-bottom: 100px;
