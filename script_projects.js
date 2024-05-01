@@ -13,10 +13,10 @@ const projects = [
         link: "https://mata-mosquito-game-dw.netlify.app/"
     },
     {
-        title: "Indisponível",
-        description: "Projeto em desenvolvimento, aguarde.",
+        title: "Lista de Tarefas",
+        description: "Lista de Tarefas para o Dia a Dia com modo noturno.",
         image: "img/indi.png",
-        link: "#"
+        link: "https://listdwview.netlify.app/"
     },
 ];
 
