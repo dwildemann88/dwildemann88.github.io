@@ -15,7 +15,7 @@ const projects = [
     {
         title: "Lista de Tarefas",
         description: "Lista de Tarefas para o Dia a Dia com modo noturno.",
-        image: "img/indi.png",
+        image: "img/lista.jpg",
         link: "https://listdwview.netlify.app/"
     },
 ];
