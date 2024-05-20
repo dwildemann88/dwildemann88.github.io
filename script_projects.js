@@ -18,6 +18,12 @@ const projects = [
         image: "img/lista.jpg",
         link: "https://listdwview.netlify.app/"
     },
+    {
+        title: "Lista de Despesas",
+        description: "Lista de Despesas para controle de gastos.",
+        image: "img/lista.jpg",
+        link: "https://lista-de-despesas-dw.netlify.app"
+    },
 ];
 
 // Função para criar os elementos de exposição
